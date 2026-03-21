@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Tailwind v4 ইমপোর্ট */
+@import "tailwindcss";
+
+/* daisyUI ইমপোর্ট - এটি অবশ্যই Tailwind ইমপোর্টের নিচে হতে হবে */
+@plugin "daisyui";
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+}
