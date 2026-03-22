@@ -2,24 +2,50 @@
   "pricing": [
     {
       "id": 1,
-      "name": "Starter",
-      "monthly_price": 19,
-      "yearly_price": 182,
-      "subscription": "monthly"
+      "name": "general",
+      "price": "$109 us doller" ,
+      "subscription": "monthly",
+      "description": "Perfect for individuals and small projects just getting started. Simple setup, no commitments, cancel anytime.",
+      "features": [
+        "Up to 3 projects",
+        "5 GB storage",
+        "Email support",
+        "Basic analytics",
+        "API access"
+      ]
     },
     {
       "id": 2,
       "name": "Pro",
-      "monthly_price": 59,
-      "yearly_price": 566,
-      "subscription": "monthly"
+      "price": "$189 us doller",
+      "subscription": "monthly",
+      "description": "Designed for growing teams that need more power and flexibility. Unlock advanced tools and priority support.",
+      "features": [
+        "Unlimited projects",
+        "50 GB storage",
+        "Priority email & chat support",
+        "Advanced analytics",
+        "API access",
+        "Custom integrations",
+        "Team collaboration tools"
+      ]
     },
     {
       "id": 3,
-      "name": "Enterprise",
-      "monthly_price": 199,
-      "yearly_price": 1910,
-      "subscription": "yearly"
+      "name": "Advance",
+      "price": "$190 us doller",
+      "subscription": "yearly",
+      "description": "Built for large organizations requiring top-tier security, compliance, and dedicated support at scale.",
+      "features": [
+        "Unlimited projects & users",
+        "500 GB storage",
+        "24/7 dedicated support",
+        "Enterprise analytics & reporting",
+        "Full API access",
+        "SSO & advanced security",
+        "Custom contracts & SLA",
+        "Onboarding & training"
+      ]
     }
   ]
 }
