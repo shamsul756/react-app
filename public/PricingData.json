@@ -1,0 +1,25 @@
+{
+  "pricing": [
+    {
+      "id": 1,
+      "name": "Starter",
+      "monthly_price": 19,
+      "yearly_price": 182,
+      "subscription": "monthly"
+    },
+    {
+      "id": 2,
+      "name": "Pro",
+      "monthly_price": 59,
+      "yearly_price": 566,
+      "subscription": "monthly"
+    },
+    {
+      "id": 3,
+      "name": "Enterprise",
+      "monthly_price": 199,
+      "yearly_price": 1910,
+      "subscription": "yearly"
+    }
+  ]
+}

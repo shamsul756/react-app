@@ -1,6 +1,8 @@
-import { list } from 'postcss';
-import React from 'react';
+import React, { useState } from 'react';
 import Link from './Link';
+import { Menu, X } from 'lucide-react';
+
+
 
 const Navbar = () => {
     const navLinks = [
@@ -30,21 +32,41 @@ const Navbar = () => {
             path: '/blog'
         }
     ];
-
-
+    const [open, setOpen] = useState(false);
+    const links = navLinks.map(route => <Link key={route.id} route={route}></Link>);
     return (
-        <nav>
-            <ul className='flex'>
+
+        <nav className='flex justify-between mx-10 mt-6'>
+
+            <span onClick={() => setOpen(!open)}>
                 {
-                    navLinks.map(route => <Link key={route.id} route={route}></Link>)
+                    open ?
+                        <X className='md:hidden'></X> :
+                        <Menu className='md:hidden'></Menu>
+                }
+                <ul className={`md:hidden
+                     absolute
+                      ${open ? 'top-7': '-top-40'}
+                      duration-1000
+                       bg-cyan-200
+                        text-black`}>
+                    {
+                        links
+                    }
+                </ul>
+
+                <h3>my navbar</h3>
+            </span>
+
+            <ul className='md:flex hidden'>
+                {
+                    links
                 }
             </ul>
-            {/* <ul className='flex'>
-                <li className='mr-10'><a href="/home">Home</a></li>
-                <li className='mr-10'><a href="/about">About</a></li>
-                <li className='mr-10'><a href="/blog">Blog</a></li>
-            </ul > */}
+
+            <button>sign In</button>
         </nav >
+
     );
 };
 
