@@ -7,7 +7,7 @@ const PricingOption = ({ pricingPromise }) => {
     const pricingArray = data.pricing;
     return (
         <div>
-            <h2 className='text-5xl'>Get our membership</h2>
+            <h2 className='text-5xl text-center font-bold xmd:text-6xl text-center lg:text-7xl text-center py-5'>Get our membership</h2>
 
             <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-8'>
                 {/* {
