@@ -2,9 +2,9 @@
   "pricing": [
     {
       "id": 1,
-      "name": "general",
+      "name": "General",
       "price": "$109 us doller" ,
-      "subscription": "monthly",
+      "subscription": "weekly",
       "description": "Perfect for individuals and small projects just getting started. Simple setup, no commitments, cancel anytime.",
       "features": [
         "Up to 3 projects",
@@ -17,6 +17,7 @@
     {
       "id": 2,
       "name": "Pro",
+      "popular": true,
       "price": "$189 us doller",
       "subscription": "monthly",
       "description": "Designed for growing teams that need more power and flexibility. Unlock advanced tools and priority support.",
@@ -26,8 +27,7 @@
         "Priority email & chat support",
         "Advanced analytics",
         "API access",
-        "Custom integrations",
-        "Team collaboration tools"
+        "Custom integrations"
       ]
     },
     {
@@ -42,9 +42,7 @@
         "24/7 dedicated support",
         "Enterprise analytics & reporting",
         "Full API access",
-        "SSO & advanced security",
-        "Custom contracts & SLA",
-        "Onboarding & training"
+        "SSO & advanced security"
       ]
     }
   ]
